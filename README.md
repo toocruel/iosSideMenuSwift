@@ -1,7 +1,7 @@
 # iosSideMenuSwift
 
 This is based on https://github.com/romaonthego/RESideMenu .
-Only Convent  to Swift.
+Only Convert  to Swift.
  
 <img src="https://github.com/romaonthego/RESideMenu/raw/master/Screenshot.png" alt="RESideMenu Screenshot" width="400" height="568" />
 <img src="https://raw.githubusercontent.com/romaonthego/RESideMenu/master/Demo.gif?2" alt="RESideMenu Screenshot" width="320" height="568" />
