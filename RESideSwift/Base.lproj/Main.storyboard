@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="MFa-oS-byB">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="Hoz-KY-lgl">
+            <objects>
+                <viewController storyboardIdentifier="RootViewController" id="MFa-oS-byB" customClass="RootViewController" customModule="RESideSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZLE-Ru-W8q"/>
+                        <viewControllerLayoutGuide type="bottom" id="8Et-30-sP0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pbe-qc-r99">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="slW-jw-on5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="568" y="365"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="tjz-R3-0NQ">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="G6V-Ro-3HV" customClass="HomeViewController" customModule="RESideSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xnu-15-chT"/>
+                        <viewControllerLayoutGuide type="bottom" id="kR3-Ye-Pvq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ehn-5B-3FZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Balloon" translatesAutoresizingMaskIntoConstraints="NO" id="iLn-G3-0X7">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="aKb-zY-qyw">
+                        <barButtonItem key="leftBarButtonItem" title="Left" id="JLw-Qd-hxM">
+                            <connections>
+                                <action selector="presentLeftMenuViewController:" destination="G6V-Ro-3HV" id="TAc-rN-Pe9"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Right" id="Pfo-zt-iYX">
+                            <connections>
+                                <action selector="presentRightMenuViewController:" destination="G6V-Ro-3HV" id="hLy-I0-vzy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nIh-gO-Add" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1529" y="365"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="e6p-Ni-eB2">
+            <objects>
+                <navigationController storyboardIdentifier="ContentViewController" id="tip-7s-656" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" alpha="0.49999999999999961" contentMode="scaleToFill" id="Sje-2F-pXK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="G6V-Ro-3HV" kind="relationship" relationship="rootViewController" id="dCz-1o-dc5"/>
+                        <segue destination="ZEf-1z-Yt6" kind="push" id="pAm-VS-WYl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hou-ip-owA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1067" y="333"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="DoF-qj-20n">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="ZEf-1z-Yt6" customClass="LoginViewController" customModule="RESideSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UB5-IT-I09"/>
+                        <viewControllerLayoutGuide type="bottom" id="vqR-pa-nh3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ml9-hJ-xIj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enF-St-9Mo">
+                                <rect key="frame" x="104" y="202" width="112" height="30"/>
+                                <state key="normal" title="Login is finished">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginWasPressed:" destination="ZEf-1z-Yt6" eventType="touchUpInside" id="Yg5-uz-n4y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="u1X-UJ-0Fd">
+                        <barButtonItem key="leftBarButtonItem" title="Left" id="kM3-Zx-wlH">
+                            <connections>
+                                <action selector="presentLeftMenuViewController:" destination="ZEf-1z-Yt6" id="6AY-Yq-rXI"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Right" id="7t0-x2-U0R">
+                            <connections>
+                                <action selector="presentRightMenuViewController:" destination="ZEf-1z-Yt6" id="8BD-7d-mYR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BQ6-5w-CIy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="513" y="1035"/>
+        </scene>
+        <!--Left Menu View Controller-->
+        <scene sceneID="2ee-NN-Ldm">
+            <objects>
+                <viewController storyboardIdentifier="LeftMenuViewController" id="vXZ-0G-4ls" customClass="LeftMenuViewController" customModule="RESideSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5dQ-qt-SYn"/>
+                        <viewControllerLayoutGuide type="bottom" id="07u-g0-DeY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IrE-Ah-uUr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stars" translatesAutoresizingMaskIntoConstraints="NO" id="EY4-n8-lWy">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="twS-Cx-hoY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="873" y="1027"/>
+        </scene>
+        <!--Right Menu View Controller-->
+        <scene sceneID="hRy-3K-CEl">
+            <objects>
+                <viewController storyboardIdentifier="RightMenuViewController" id="PqW-33-5yE" customClass="RightMenuViewController" customModule="RESideSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GsN-ML-yfG"/>
+                        <viewControllerLayoutGuide type="bottom" id="lNP-3O-k0U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NDR-yq-GD0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stars" translatesAutoresizingMaskIntoConstraints="NO" id="4n5-ir-OdC">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cBm-M4-RM9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1206" y="1080"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Balloon" width="320" height="568"/>
+        <image name="Stars" width="320" height="568"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
