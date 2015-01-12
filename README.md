@@ -2,7 +2,7 @@
 
 This is based on https://github.com/romaonthego/RESideMenu .
 Only Convent  to Swift.
- <a href=“https://github.com/romaonthego/RESideMenu”>Detail</a>
+ 
 <img src="https://github.com/romaonthego/RESideMenu/raw/master/Screenshot.png" alt="RESideMenu Screenshot" width="400" height="568" />
 <img src="https://raw.githubusercontent.com/romaonthego/RESideMenu/master/Demo.gif?2" alt="RESideMenu Screenshot" width="320" height="568" />
 
@@ -13,7 +13,7 @@ Only Convent  to Swift.
 1. Create a subclass of `RESideMenu`. In this example we call it `RootViewController`.
 2. In the Storyboard designate the root view's owner as `RootViewController`.
 3. Make sure to add `#import "RESideMenu.h"` in `RESideSwift-Bridging-Header.h` or your object-c bridge header file   .
-4.Do not forget config the above file  in Xcode Build Settings->Swift Compiler-Code Generation.
+4. Do not forget config the above file  in Xcode Build Settings->Swift Compiler-Code Generation.
 5. Add more view controllers to your Storyboard, and give them identifiers "leftMenuViewController", "rightMenuViewController" and “homeViewController". Note that in the new XCode the identifier is called "Storyboard ID" and can be found in the Identity inspector.
 5. Add a method `awakeFromNib` to `RootViewController.swift` with the following code:
 
